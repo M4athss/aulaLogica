@@ -17,6 +17,11 @@ function adicionar() {
 }
 
 function sortear() {
+    if(lista.length < 2){
+        alert('Numero baixo de participantes, minimo 2');
+        return;
+    }
+
     sorteados = [];
     embaralha(lista);
     console.log(lista);
